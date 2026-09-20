@@ -1,0 +1,24 @@
+# Password hashing
+bcrypt>=4.1.0
+
+# Camera + face recognition
+# NOTE: using opencv-contrib-python (includes cv2.face / LBPH) instead of
+# opencv-python + face_recognition (dlib), because dlib has no Windows
+# wheels for most Python versions and requires compiling C++ from source
+# with CMake + Visual Studio Build Tools. LBPH needs no compiler at all.
+#
+# PINNED BELOW 5.0: opencv-contrib-python 5.0.x stopped bundling the
+# haarcascade_*.xml files that face detection needs (cv2/data/ ships empty).
+# Verified 4.10.0.84 still includes them; 5.0.0.93 does not. Stay on a 4.x
+# release until upstream fixes this.
+opencv-contrib-python>=4.9.0,<5.0.0
+numpy>=1.26.0
+
+# GUI branding (logo rendering in the themed interface)
+Pillow>=10.0.0
+
+# Scheduling
+schedule>=1.2.0
+
+# PDF report generation
+reportlab>=4.0.0

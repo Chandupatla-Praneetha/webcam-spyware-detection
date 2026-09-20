@@ -1,0 +1,34 @@
+# Virtual environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Face data / biometric data
+faces/
+
+# Intruder snapshots
+intruders/
+
+# Runtime/generated data
+alerts/
+logs/
+reports/
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment variables / secrets
+.env
+
+# IDE settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
